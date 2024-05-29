@@ -8,7 +8,7 @@ const Product = () => {
     <section className="py-10">
       <GeneralLayout>
         <p className="text-center font-bold text-xl">Products</p>
-        <div className="flex gap-5">
+        <div className="flex gap-5 mt-10">
           {products.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}
