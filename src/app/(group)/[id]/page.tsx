@@ -12,7 +12,7 @@ const ProductDetails = ({ params }: { params: { id: string } }) => {
         <div className="flex lg:flex-row flex-col items-center gap-10">
           <div className="max-w-[400px] mx-auto h-[500px]">
             <Image
-              className="bg-cover w-full h-full"
+              className="object-cover w-full h-full"
               src={product?.image ?? ""}
               alt={product?.title ?? ""}
             />

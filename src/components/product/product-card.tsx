@@ -5,18 +5,21 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ProductCard = (props: IProduct) => {
-  const { amount, description, id, image, title } = props;
+  const { amount, id, image, title } = props;
   return (
     <figure key={id} className="max-w-[200px] p-5 border rounded-xl">
       <Link href={`/${id}`}>
-        <div className="">
-          <Image src={image} alt={title} />
+        <div className="h-[200px]">
+          <Image
+            src={image}
+            className="h-full w-full object-cover"
+            alt={title}
+          />
         </div>
-        <figcaption className="space-y-5 mt-5">
+        <figcaption className="space-y-3 mt-5">
           <p>{title}</p>
           <p>{amount}</p>
-
-          <>View Details</>
+          <p>View Details</p>
         </figcaption>
       </Link>
     </figure>
