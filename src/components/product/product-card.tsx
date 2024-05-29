@@ -7,7 +7,7 @@ import Link from "next/link";
 const ProductCard = (props: IProduct) => {
   const { amount, id, image, title } = props;
   return (
-    <figure key={id} className="max-w-[200px] p-5 border rounded-xl">
+    <figure key={id} className="max-w-[300px] w-full p-5 border rounded-xl">
       <Link href={`/${id}`}>
         <div className="h-[200px]">
           <Image
